@@ -32,3 +32,18 @@ sudo useradd OPTION USER  // -p - пароль
 journalctl -xe // просмотр всех логов  
 journal --since "1 hour ago" // логи за последний час  
 
+
+// настройка ssh  
+sudo apt-get install openssh-server  
+sudo apt-get install policycoreutils  
+sudo apt-get install net-tools  
+sestatus  
+  
+![image](https://github.com/user-attachments/assets/d03dccfd-7f93-4439-a4e8-5a2f2f9ef78b)  
+
+ssh ip -p 2222  
+  
+// композиция рабочего стола:  
+gsettings set org.gnome.desktop.interface enable-animations false  
+
+
