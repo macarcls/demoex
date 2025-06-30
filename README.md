@@ -25,4 +25,10 @@ sudo lpstat -p -d
 sudo groupadd OPTION GROUP  
 cat /etc/group  
 sudo usermod -aG developers superuser1  
-sudo useradd OPTION USER  
+sudo useradd OPTION USER  // -p - пароль  
+изменять юзеров можно через usermod  
+  
+// Логи  
+journalctl -xe // просмотр всех логов  
+journal --since "1 hour ago" // логи за последний час  
+
